@@ -342,3 +342,10 @@ impl<'a, T> IntoIterator for &'a mut HoleyVec<T> {
         self.iter_mut()
     }
 }
+
+impl<T> FromIterator<T> for HoleyVec<T> {
+    fn from_iter<I: IntoIterator<Item=T>>(iter: I) -> Self {
+        let vec: Vec<Cell<T>> = iter.into_iter().map(Cell::Value).collect();
+        Self { first_hole: vec.len(), vec }
+    }
+}
