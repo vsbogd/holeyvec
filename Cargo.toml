@@ -1,0 +1,17 @@
+[package]
+name = "holeyvec"
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE"
+description = "Vector with holes implementation. Allows removing vector's elements in a constant time."
+repository = "https://github.com/vsbogd/holeyvec"
+readme = "README.md"
+categories = [ "data-structures", "algorithms" ]
+keywords = [ "vector", "hole", "Vec", "stable-index", "constant-time" ]
+
+[lib]
+name = "holeyvec"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[dependencies]
