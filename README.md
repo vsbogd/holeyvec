@@ -10,7 +10,7 @@ added to the end of the vector similarly to [std::vec::Vec].
 
 ## Examples
 
-```rs
+```rust
 use holeyvec::HoleyVec;
 
 let mut v = HoleyVec::new();
