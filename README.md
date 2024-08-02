@@ -2,7 +2,7 @@
 
 Vector with holes data structure. Each time an element is removed its index is added into a
 list of empty elements. No other values are moved or touched. This allows removing elements in
-a constant time.
+a constant time. And allows the indices of the other elements to remain stable.
 
 When new element is pushed it takes the last empty element from the list. It means element is
 not necessary added into the end of the vector. If there is no empty elements then element is
